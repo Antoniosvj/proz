@@ -1,9 +1,11 @@
-i = 20
-while i >= 0:
-    if i == 13:
+#Como foi proposto no desafio, fiz os andares passando de forma decrescente
+
+andares = 20
+while andares >= 0:
+    if andares == 13:
         pass
-    elif i == 0:
+    elif andares == 0:
         print('Terreo')
     else:
-        print(f'{i} andar')
-    i-=1
+        print(f'{andares}º andar')
+    andares-=1
