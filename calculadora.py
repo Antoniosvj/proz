@@ -1,7 +1,5 @@
 operacao = 1
 while operacao != 0:
-    num1 = int(input('Digite o primeiro número: '))
-    num2 = int(input('Digite o segundo número: '))
     operacao = int(input('''Qual tipo de operação deseja fazer:
                         1 . Soma
                         2 . Subtração
@@ -11,6 +9,8 @@ while operacao != 0:
     if operacao == 0:
         print('Obrigado por ter utilizado nossa calculadora!!!')
     else:
+        num1 = int(input('Digite o primeiro número: '))
+        num2 = int(input('Digite o segundo número: '))
         def calculadora(num1, num2, operacao):
             if operacao == 1:
                 return num1 + num2
