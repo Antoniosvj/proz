@@ -7,12 +7,13 @@ titulo.innerText = "Mercadinho Livre";
 titulo.id = "titulo";
 
 //metodo complexo
-bola = ['Bola Futebol', 'Bola para Jogar futebol', '129,90']
+bola = ['Bola Futebol', 'Bola para Jogar futebol', '129,90', './transferir.jpeg']
 
 let produto = document.createElement("section");
 produto.innerHTML = `
     <h2 id="produtoTitulo">${bola[0]}</h2>
     <p>${bola[1]}</p>
+    <img src="${bola[3]}">
     <h3>${bola[2]}</h3>
 `;
 
