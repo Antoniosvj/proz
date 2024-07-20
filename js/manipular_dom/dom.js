@@ -28,15 +28,39 @@
 // console.log(elementoMain.innerText);
 // console.log(elementoMain.innerHTML);
 
-let elementoH1 = document.querySelector("h1");
-elementoH1.innerText = "Novo título com JS";
+// let elementoH1 = document.querySelector("h1");
+// elementoH1.innerText = "Novo título com JS";
 
-let elementoMain = document.querySelector("main");
-elementoMain.innerHTML = `
-    <h2>Novo subtítulo</h2>
-    <ul>
-    <li>Elemento 1</li>
-    <li>Elemento 2</li>
-    <li>Elemento 3</li>
-    </ul>
-`
+// let elementoMain = document.querySelector("main");
+// elementoMain.innerHTML = `
+//     <h2>Novo subtítulo</h2>
+//     <ul>
+//     <li>Elemento 1</li>
+//     <li>Elemento 2</li>
+//     <li>Elemento 3</li>
+//     </ul>
+// `;
+
+//Criando Elemento com JS
+
+//criar elemento
+let novoElemento = document.createElement("li");
+novoElemento.innerText = "JavaScript";
+//console.log(novoElemento)
+novoElemento.id = "ling-js";
+console.log(novoElemento)
+//adicionando elemento via dom
+let listaLinguagens = document.querySelector(".lista-linguagens");
+listaLinguagens.appendChild(novoElemento);
+
+//adicionando elementos complexos
+const postagemJavaScript = document.createElement("div");
+postagemJavaScript.innerHTML = `
+    <h2 class="post-titulo">JavaScript</h2>
+    <p class="post-texto">JavaScript é uma linguagem de programação</p>
+`;
+
+//capturando elemento pai
+const postagens = document.querySelector(".postagens");
+//adicionando elemento
+postagens.appendChild(postagemJavaScript);
